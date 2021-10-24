@@ -1,0 +1,738 @@
+
+:root{
+    --navBg:#f5f5f5;
+    --resortColor:#A08e71;
+    --bannerColor:#626d71;
+  --fontFamily :Arial, Helvetica, sans-serif;
+  --servicesBg:#c8c8c7;
+  --roomBtn:#c9c9c8;
+  
+  };
+  body{
+    padding: 0;
+    margin: 0;
+    top: 0;
+  }
+  /*Navbar start here*/
+  nav{
+   
+    background-color: var(--navBg);
+    width: 100%;
+    overflow-x: hidden;
+    display: grid;
+    align-content: center;
+    grid-template-columns: auto auto auto;
+  }
+  .header-nav{
+    display: grid;
+    justify-content: center;
+  }
+  .header-nav  h2{
+    font-family: var(--fontFamily);
+    border: 3px solid;
+    padding: 0.3rem 3rem;
+    border-color: var(--resortColor);
+  }
+  .resort-span{
+    color: var(--resortColor);
+  }
+  .ul-nav{
+    display: grid;
+    grid-template-columns: auto auto;
+    list-style: none;
+    align-items: center;
+  }
+  .ul-nav a{
+  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: black;
+  font-size: 20px;
+  }
+   .nav-links{
+    
+     overflow: hidden;
+     height: 0;
+     
+     overflow: hidden;
+     list-style: none;
+    
+   }
+   .show-nav{
+   
+     display: grid;
+     grid-template-columns: auto auto;
+     list-style: none;
+     
+   }
+   .show-nav a{
+    display: grid;
+
+    text-decoration: none;
+    color: black;
+padding: 0.5rem 0;
+text-align: center;
+list-style: none;
+font-size: 19px;
+font-family: Arial, Helvetica, sans-serif;
+   }
+  .nav-links a{
+    display: block;
+    text-decoration: none;
+    color: black;
+padding: 1rem 0;
+text-align: center;
+list-style: none;
+font-size: 19px;
+font-family: Arial, Helvetica, sans-serif;
+  }
+  .mobile-menu{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    display: none;
+  }
+  .mobile-menu a{
+    text-decoration: none;
+    
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: black;
+  font-size: 20px;
+  }
+  /*Navbar ends here*/
+  /*hero start here*/
+  .defaultHero{
+    width: 100%;
+   height: 90vh;
+   display: grid;
+   justify-content: center;
+   align-content: center;
+  
+   background-image: url("./photo-two.jpg");
+   background-size: cover;
+   margin-top: -0.99em;
+  }
+  .roomsHero{
+    width: 100%;
+
+   min-height: 60vh;
+   display: grid;
+   justify-content: center;
+   align-content: center;
+  
+   background-image: url("./photo-three.jpg");
+   background-size: cover;
+   margin-top: -0.99em;
+  }
+  .banner{
+    border: 1px solid ;
+    border-color: var(--bannerColor);
+    padding: 4em 17em;
+    background-color: rgba(0, 0,0,0.7);
+  }
+  .header-banner h1{
+    font-family: var(--fontFamily);
+    font-size: 45px;
+    color: white;
+    letter-spacing: 0.2em;
+  
+  }
+  .underline{
+    display: grid;
+    justify-content: center;
+  }
+  .underline-line{
+    width: 15em;
+    border: 2px solid ;
+    border-color: var(--resortColor);
+  }
+  .text-price{
+    display: grid;
+    justify-content: center;
+  }
+  .text-banner-one{
+    font-size: 22px;
+    letter-spacing: 0.2em;
+    font-family: var(--fontFamily);
+    color: white;
+  }
+  .p-btn-rooms{
+    display: grid;
+    justify-content: center;
+  }
+  .div-rooms-btn{
+    display: grid;
+    
+    margin-top: -4em;
+    justify-content: center;
+ 
+    
+  }
+  .p-btn-rooms a,.a-btn-rooms{
+    text-decoration: none;
+    border: 2px solid;
+    border-color: var(--resortColor);
+    font-size: 22px;
+    background-color: var(--resortColor);
+    font-family: var(--fontFamily);
+    color: white;
+    padding: 0.3rem 3rem;
+    height: 29px;
+  }
+  #btn-room{
+    text-decoration: none;
+    border: 2px solid;
+    border-color: white;
+    font-size: 22px;
+    background-color: transparent;
+    font-family: var(--fontFamily);
+    color: white;
+    padding: 0.3rem 3rem;
+    height: 29px;
+  }
+  /*hero end here*/
+  /*featured rooms starts here*/
+  .featured-rooms{
+    justify-content: center;
+    display: grid;
+    
+  }
+  .featured-header{
+    display: grid;
+    justify-content: center;
+    margin-top: 2em;
+  }
+  .featured-header h2{
+    font-family: var(--fontFamily);
+    border-bottom: 4px solid ;
+    border-color: var(--resortColor);
+  }
+  .articles-rooms{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 7em;
+  }
+ 
+  .price-tag{
+    
+    border: 1px solid rgba(0, 0,0,0.7);
+  display: grid;
+    width: 90px;
+    height: 40px;
+    align-content: center;
+    align-items: center;
+    background-color: #0d0704;
+    color: white;
+    font-family: var(--fontFamily);
+    justify-content: center;
+    z-index: -100%;
+    
+    
+  }
+  
+  .name-banner{
+    border: 2px solid ;
+    border-color: var(--roomBtn);
+    font-family: var(--fontFamily);
+    font-size: 20px;
+    background-color: var(--roomBtn);
+    font-weight: bold;
+  justify-content: center;
+    margin-top: -0.1em;
+    display: grid;
+    height: 30px;
+   width: 15em;
+    cursor: pointer;
+  }
+  
+  
+  /*featured rooms ends here*/
+  /*service bar starts here*/
+  .services-bar{
+    background-color: var(--servicesBg);
+    width: 100%;
+    display: grid;
+    font-family: var(--fontFamily);
+    margin-top: 3em;
+  }
+  .services-bar header {
+    display: grid;
+    justify-content: center;
+   
+  }
+  .h2-services{
+    border-bottom: 4px solid;
+    border-color: var(--resortColor);
+  }
+  .services-component{
+    margin-top: 1em;
+    width: 100%;
+    display: grid;
+    overflow-x: hidden;
+    background-color: var(--servicesBg);
+  }
+  .services{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: var(--servicesBg);
+  }
+  .single-service{
+   display: grid;
+   justify-content: center;
+   
+  }
+
+  .span-photo{
+    color: var(--resortColor);
+    font-size: 35px;
+  justify-self: center;
+  display: grid;
+  }
+  .title-service{
+    display: grid;
+    justify-self: center;
+    letter-spacing: 0.05em;
+    font-family: var(--fontFamily);
+  }
+  .info{
+    width: 17em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .name{
+    display: grid;
+    justify-self: center;
+  }
+  .desc{
+    display: grid;
+    justify-content: center;
+    width: 15em;
+  }
+  
+  /*service bar ends here*/
+
+  /*single room properties starts  here*/
+  .single-room-page{
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    padding-top: 1em;
+  }
+.single-room-photos {
+  display: flex;
+  gap: 3em;
+}
+.h3-single-rooms{
+  font-family: var(--fontFamily);
+}
+.single-room-info{
+  display: grid;
+  grid-template-columns: auto auto;
+
+}
+.p-descr-single{
+  margin-top: -5.5em;
+  
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.room-extras{
+  display: grid;
+  justify-content: center;
+  list-style: none;
+}
+.h4-single-rooms{
+  font-size: 19px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.h3-single-rooms-extras{
+  display: grid;
+  justify-content: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.room-extras{
+  display: grid;
+  justify-content: center;
+}
+.extras{
+
+grid-template-columns: auto auto auto;
+gap: 2em;
+  font-size: 19px;
+  display: grid;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+ /*single room properties mobile starts here*/
+ @media (max-width:786px) {
+.single-room-photos{
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-bottom: 4em;
+}
+.photo-single-room{
+  width: 300px;
+
+}
+.single-room-info{
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+}
+.p-descr-single{
+  margin-top: 0;
+  
+ 
+}
+
+}
+  /*Reviews bar starts here*/
+  .div-form-reviews{
+    display:grid;
+    justify-content: center;
+  }
+  .review-header{
+    display: grid;
+    justify-content: center;
+  }
+  .review-header h3{
+    font-family: var(--fontFamily);
+  }
+  .section-modal{
+    display: grid;
+    justify-content: center;
+  }
+  #p-content{
+    color: red;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .form-review{
+    display: grid;
+    line-height: 200%;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .btn-add{
+    margin-top: 0.5em;
+    border: 1px solid ;
+    border-color: var(--resortColor);
+    background-color: var(--resortColor);
+    padding: 0.4rem 2rem;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+.comment-div{
+  display: grid;
+  justify-content: center;
+  line-height: 70%;
+  font-family: var(--fontFamily);
+}
+.comment-name{
+  font-weight: bold;
+}
+.comment-email{
+  margin-top: -0.5em;
+  color: #c8c8c7;
+}
+.comment-feedback{
+  margin-top: -0.1em;
+}
+.btn-div-link{
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+.link-btn-proceed{
+  text-decoration: none;
+  color: white;
+  border: 2px solid ;
+   background-color: var(--resortColor);
+   font-family: var(--fontFamily);
+  border-color: var(--resortColor);
+  padding: 0.3rem 2rem;
+  
+}
+.link-btn-pay{
+  text-decoration: none;
+  color: white;
+  
+   background-color: var(--resortColor);
+   font-family: var(--fontFamily);
+  border-color: var(--resortColor);
+  
+}
+.form-book{
+  line-height: 400%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  justify-content: center;
+  display: grid;
+
+}
+.btn-pay{
+  text-decoration: none;
+  color: white;
+  border: 2px solid ;
+  border-color: var(--resortColor);
+  background-color: var(--resortColor);
+  padding: 0.3rem 3rem;
+  
+}
+.link{
+  text-decoration: none;
+}
+.headder-book{
+  display: grid;
+  justify-content: center;
+}
+.headder-book h2{
+  font-family: var(--fontFamily);
+}
+.input-book{
+  width: 250px;
+}
+#btn-pay-input{
+  margin-bottom: 2em;
+}
+.btn-pay{
+  margin-top: 1erm;
+  border: 2px solid ;
+  border-color: var(--resortColor);
+  background-color: var(--resortColor);
+  color: white;
+}
+.btn-div-adjust{
+  display: grid;
+  justify-content: center;
+  
+  margin-top: 3em;
+}
+.btn-div-adjust  {
+display: grid;
+justify-content:center;
+
+}
+.btn-div-adjust-btn{
+  background-color: transparent;
+  border-color: transparent;
+  color: blue;
+  cursor: pointer;
+}
+
+.payment-div{
+  display: grid;
+  justify-content: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.btn-pay-center{
+  display: grid;
+  justify-content: center;
+}
+.btn-pay-btn{
+  background-color: var(--resortColor);
+  color: white;
+  padding: 0.3rem 4rem;
+border-color: var(--resortColor);
+font-family: var(--fontFamily);
+border-radius: 30px;
+}
+.div-booking-component{
+  margin-bottom: 5em;
+}
+.div-rooms{
+  margin-bottom: 5em;
+}
+.reviews-part{
+  margin-bottom: 1em;
+}
+  /*Reviews bar ends here*/
+
+ /*single room properties mobile ends  here*/
+ /*Search starts  here*/
+ .div-booking-component{
+   height: 70vh;
+ }
+ .div-pad-top{
+   padding-top: 5em;
+ }
+
+ .filter-form{
+  display: flex;
+ font-family: var(--fontFamily);
+  justify-content: center;
+  gap: 1em;
+ }
+
+ .number-of-comments{
+display: grid;
+justify-content: center;
+font-family: var(--fontFamily);
+}
+ /*Search ends  here*/
+/*Footer starts here*/
+footer{
+  display: flex;
+ gap: 10em;
+
+  background-color: rgba(0, 0,0,0.75);;
+ 
+  justify-content: center;
+}
+footer ul{
+  list-style: none;
+  line-height: 190%;
+}
+footer ul a {
+  text-decoration: none;
+  color: white;
+  font-family: var(--fontFamily);
+}
+.header-no-rooms-found{
+  display: grid;
+  justify-content: center;
+  padding-top: 2em;
+  font-family: var(--fontFamily);
+}
+/*Footer ends here*/
+  /*single room properties ends here*/
+  /*Mobile View Starts here*/
+  @media (max-width:644px) {
+    .single-room-photos{
+      display: grid;
+      grid-template-columns: auto;
+      justify-content: center;
+      padding-bottom: 4em;
+    }
+    .photo-single-room{
+      width: 270px;
+  
+    
+    }
+    .extras{
+  
+      grid-template-columns: auto auto;
+      gap: 2em;
+        font-size: 19px;
+        display: grid;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+  }
+  @media (max-width:786px) {
+    .filter-form{
+      display: grid;
+      gap: 0.5em;
+    }
+   }
+  @media (max-width:782px) {
+
+  }
+  @media (max-width:768px) {
+    nav{
+        grid-template-columns: auto auto ;
+    }
+    .ul-nav{
+        display: grid;
+        grid-template-columns: auto;
+        display: none;
+        justify-content: center;
+        height: 15vh;
+  
+    }
+    .mobile-menu{
+        display: grid;
+        align-content: center;
+        align-items: center;
+    }
+    .show-nav{
+   
+      display: grid;
+      justify-content: center;
+      list-style: none;
+      grid-template-columns: auto;
+    }
+    .banner{
+        padding: 0.7em;
+      
+        width: 100%;
+        height: auto;
+       
+    }
+    .articles-rooms{
+        grid-template-columns:  auto ;
+       line-height: 100%;
+        
+    }
+   
+    .services{
+    
+        grid-template-columns: auto ;
+    }
+  
+    footer ul{
+      list-style: none;
+      line-height: 190%;
+    }
+    footer{
+      display: flex;
+     gap: 5em;
+      background-color: rgba(0, 0,0,0.75);;
+     
+      justify-content: center;
+    }
+  }
+  @media (max-width:532px) {
+    nav{
+        padding-left: 0;
+    }
+    .header-nav  h2{
+        font-family: var(--fontFamily);
+        border: 3px solid;
+        padding: 0.3rem 2.5rem;
+        border-color: var(--resortColor);
+    }
+    .banner{
+        display: grid;
+        justify-content: center;
+    }
+    .header-banner h1{
+        font-family: var(--fontFamily);
+        font-size: 35px;
+        color: white;
+        letter-spacing: 0.1em;
+    
+    }
+    footer{
+      display: grid;
+     gap: 2em;
+      background-color: rgba(0, 0,0,0.75);;
+     
+      justify-content: center;
+    }
+  }
+  @media (max-width:384px) {
+    nav{
+        padding-left: 0;
+    }
+    .header-nav  h2{
+        font-family: var(--fontFamily);
+        border: 3px solid;
+        padding: 0.3rem 1.5rem;
+        border-color: var(--resortColor);
+    }
+    .banner{
+        display: grid;
+        justify-content: center;
+    }
+    .header-banner h1{
+        font-family: var(--fontFamily);
+        font-size: 30px;
+        color: white;
+        letter-spacing: 0.05em;
+    
+    }
+    .text-banner-one{
+        font-size: 19px;
+        letter-spacing: 0.05em;
+      
+    }
+  }
+  /*Mobile View ends here*/
+  
